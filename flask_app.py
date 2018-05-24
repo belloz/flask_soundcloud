@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return render_template('my-form.html')
+	return render_template('index.html')
 	#return "Hello World! So simple!"
 	
 @app.route("/download_mp3", methods=['GET'])	

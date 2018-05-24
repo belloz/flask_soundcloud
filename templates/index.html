@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kinrow claims Heroku is a beast</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  
+  <style type="text/css">
+	html{
+		background: #532f8c;
+	}
+    .jumbotron {
+        background: #532f8c;
+        color: white;
+        padding-bottom: 80px
+    }
+    .jumbotron .btn-primary {
+        background: #845ac7;
+        border-color: #845ac7
+    }
+    .jumbotron .btn-primary:hover {
+        background: #7646c1
+    }
+    .jumbotron p {
+        color: #d9ccee;
+        max-width: 75%;
+        margin: 1em auto 2em
+    }
+    .navbar+.jumbotron {
+        margin-top: -20px
+    }
+    .jumbotron .lang-logo {
+        display: block;
+        background: #b01302;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 2px solid white
+    }
+    .jumbotron .lang-logo img {
+        max-width: 100%
+    }
+
+
+  </style>
+</head>
+<body>
+ 
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	 <div class="container">
+	  <a class="navbar-brand text-light" href="https://www.kinrow.com/" target="_blank">KINROW</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link text-light" href="/"><i class="fas fa-home fa-sm"></i> Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link text-light" href="https://devcenter.heroku.com/articles/how-heroku-works" target="_blank"><i class="fas fa-user fa-sm"></i> How Heroku Works</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle text-light" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <i class="fas fa-book fa-sm"></i> Getting Started Guide
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a>
+			  <a class="dropdown-item" href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a>
+			</div>
+		  </li>
+		  
+		</ul>
+		
+		
+		
+	  </div>
+	</nav>
+	
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+  <div class="container">
+	<br><br>
+    <a href="https://soundcloud.com/" class="lang-logo">
+		<br>
+      <i class="fab fa-soundcloud fa-3x" style="color: #fff;"></i>
+    </a>
+    <h1>Download Soundcloud to MP3</h1>
+    <p>This is a sample Python application deployed to Heroku. It's a reasonably simple app. Type URL to download the song.</p>
+	
+	<form method="GET" action="download_mp3">
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+		<span class="input-group-text" id="basic-addon3">URL:</span>
+	  </div>
+	  
+	  <input type="text" name="url" class="form-control" id="url" aria-describedby="basic-addon3" placeholder="https://www.kinrow.com/">
+	  <button type="submit" class="btn btn-primary">Download</button>
+	</div>
+	</form>
+		
+    <a href="https://devcenter.heroku.com/articles/getting-started-with-python"><button type="button" class="btn btn-outline-light btn-lg" ><i class="fab fa-python fa-spin"></i> Getting Started with Python</button></a>
+    <a href="https://github.com/heroku/python-getting-started"><button type="button" class="btn btn-lg btn-primary" ><i class="fab fa-github"></i> Source on GitHub</button></a>
+  </div>
+</div>
+
+</body>
+</html>
