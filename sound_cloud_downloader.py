@@ -1,6 +1,5 @@
 import re
 import requests
-import sys
 
 def get_link(url):
 	html = requests.get(url)
